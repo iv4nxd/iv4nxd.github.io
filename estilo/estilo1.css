@@ -1,0 +1,370 @@
+html{
+background-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.buscador{
+    display: flex;
+    justify-content: center;
+    margin-top: -500px;
+    margin-bottom: 500px;
+}
+section {
+    padding: 50px 13% 40px;
+}
+
+a[name="arriba"] { /* Hacer la ancla de color blanco y sin subrayado */
+    color: white; 
+    text-decoration: none; 
+  }
+
+/* Estilos del navbar */
+.navbar {
+    background-color: #292929;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Estilos del menú desplegable */
+.menu-dropdown {
+    display: inline-block;
+}
+
+    /*Color del menu*/
+.menu-button {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content a:hover {
+    background-color: #555;
+}
+
+.menu-dropdown:hover .menu-content {
+    display: block;
+}
+
+/*Iconos*/
+
+.perfil-logo{
+    
+    display: flex;
+    justify-content: space-around;
+    width:40px;
+}
+
+/*Logo*/
+.logo {
+    max-width: 100%; /* El logo se ajustará al ancho de su contenedor */
+    height: 50px; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    margin: 0 10px; /* Espacio entre la imagen y la barra de búsqueda */
+}
+
+/* Estilos de la barra de búsqueda */
+.search-bar {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+input[type="text"] {
+    width: 100%; /* Ajusta el ancho de la entrada de texto según tus necesidades */
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    height: 30px; /* Ajusta la altura de la entrada de texto según tus necesidades */
+}
+
+.search-button {
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* Estilos de los enlaces de navegación */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Row*/
+.horizontal-row {
+    background-color: #000; /* Color de fondo negro */
+    color: #fff; /* Color de texto blanco */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 100%; /* Ancho del 100% */
+}
+
+.horizontal-row span {
+    text-align: center;
+    font-size: 20px; /* Tamaño del texto de 16px */
+}
+
+
+
+/*Banner*/
+
+.carousel-container {
+    max-width: 2000px; /* Ancho máximo del carrusel */
+    margin: 0px 30px; /* Márgenes laterales */
+}
+
+/* Clase para centrar el carrusel */
+.carousel {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajusta la altura de las imágenes */
+.carousel-item img {
+    width: 100%; /* Mantén el ancho al 100% para que las imágenes se ajusten automáticamente */
+    height: 600px; /* Ajusta la altura según tus necesidades */
+}
+
+/* GRID */
+
+.grid-total{
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.grid-total2{
+
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+/* Forma posicion etc de las cajas del grid */
+.box{ 
+
+    margin-top: 50px;
+    width: 300px;
+    height: 270px;
+    margin: 15px;
+    background-color: #b5b5b5;
+    box-shadow: 5px 5px 10px #888888;
+}
+
+.box-2{
+
+    margin-top: 50px;
+    width: 630px;
+    height: 270px;
+    margin: 15px;
+    background-color: #b5b5b5;
+    box-shadow: 5px 5px 10px #888888;
+
+}
+
+/* Características de las fotografias de las características */
+
+.categoria{
+
+width: 300px;
+  height: 225px;
+
+}
+
+.lit-box{
+
+    display:none;
+    width: 300px;
+    height: 225px;
+}
+
+.big-box{
+
+    width: 630px;
+    height:225px;
+
+}
+
+/*media query para pantallas inferiores*/
+
+@media (max-width: 1300px) {
+    .grid-total {
+      grid-template-columns: auto auto;
+    }
+
+    .grid-total2{
+
+        grid-template-columns:auto;
+
+    }
+
+  }
+
+@media (max-width: 650px) {
+    .grid-total {
+      grid-template-columns: auto;
+    }
+    .box-2{
+
+        width:300px;
+    }
+    .lit-box{
+        margin-top: -23px;
+        width:300px;
+        height: 225px;
+
+    }
+    .big-box{
+        display:none;
+    }
+
+    .lit-box{
+
+        display: block;
+    }
+
+  }
+
+  .nombre_categoria{
+
+    color: white;
+    font-size: 30px;
+    display:flex;
+    justify-content: center;
+    margin-top: 3px;
+
+  }
+
+  .nombre_categoria2{
+
+    color: white;
+    font-size: 30px;
+    display:flex;
+    justify-content: center;
+  }
+
+/* FOOTER */
+
+.footer{
+
+    margin-top: 50px;
+    display: grid; /*para tener las columnas*/
+    grid-template-columns: repeat(auto-fit,minmax(200px, auto));
+    gap: 3.5rem; /*espacio entre columnas*/
+    background-color: #151414;
+}
+
+.logo_footer{
+
+    width: 250px;
+    margin-bottom: -50px;
+    margin-left: 62px;
+
+}
+
+.contenido_footer{
+
+    list-style:none; /*para que no tengan un punto en las listas*/
+
+}
+.contenido_footer h4{
+
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 25px;
+}
+
+.contenido_footer li{
+
+    color: #d6d6d6;
+    margin-bottom: 50px; /* para que esten separadas entre ellas*/
+    font-size: 20px;
+}
+
+.icons a{
+
+    margin-left: 28px;
+    display: inline-block;
+    font-size: 40px;
+    color: #d6d6d6;
+    margin-right:15px;
+    transition: all .40s ease;
+}
+
+.icons a:hover{
+
+    color: #fff;
+    transform: translateY(-9px);
+
+}
+.marcas-destacadas{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+.div-marcas{
+
+    display: flex;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto auto;
+
+}
+
+.marca{
+
+    width: 200px;
+    margin-left: 5%;
+
+}
