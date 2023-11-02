@@ -9,199 +9,125 @@
     <!-- BOOTSTRAP -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
     
     <!-- BOXICONS -->
 
-    <link rel="stylesheet"
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-  
- 
-  
-  <!-- Buscador -->
+    <!-- Buscador -->
     <nav class="navbar">
-      <div class="menu-dropdown">
-          <button class="menu-button">☰</button>
-          <div class="menu-content">
-              <a href="#">Mis pedidos</a>
-              <a href="#">Contactar</a>
-              <a href="#">Sobre nosotros</a>
-          </div>
-      </div>
-      <!--Logo-->
-    <img src="estilo/logo.png" class="logo" alt="Logo">
-      <div class="search-bar">
-        <input type="text" placeholder="Buscar...">
-        <button class="search-button">Buscar</button>
+        <div class="menu-dropdown">
+            <button class="menu-button">☰</button>
+            <div class="menu-content">
+                <a href="#">Mis pedidos</a>
+                <a href="#">Contactar</a>
+                <a href="#">Sobre nosotros</a>
+            </div>
+        </div>
+        <!-- Logo -->
+        <img src="estilo/logo.png" class="logo" alt="Logo">
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button class="search-button">Buscar</button>
+        </div>
+        <ul class="nav-links">
+            <li><a href=""></a></li>
+            <li><img src="fotos/perfil.svg" class="perfil-logo" alt="Perfil" width="50px" height="50px"></li>
+            <li><img src="fotos/cora.svg" class="perfil-logo" alt="Perfil" width="80px" height="50px"></li>
+            <li><img src="fotos/carro.svg" class "perfil-logo" alt="Perfil" width="70px" height="50px"></li>
+        </ul>
+    </nav>
+
+    <!-- Container -->
+    <div class="horizontal-row">
+        <a href="#marcas">Marcas</a>
+        <span>Novedades</span>
+        <span>Taller</span>
+        <span>Ofertas</span>
     </div>
-      <ul class="nav-links">
-          <li><a href=""></a></li>
-          <li><img src="fotos/perfil.svg" class="perfil-logo" alt="Perfil" width="50px" height="50px"></li>
-          <li><img src="fotos/cora.svg" class="perfil-logo" alt="Perfil" width="80px" height="50px"></li>
-          <li><img src="fotos/carro.svg" class="perfil-logo" alt="Perfil" width="70px" height="50px"></li>
-      </ul>
-  </nav>
 
-   <!--Container-->
-   <div class="horizontal-row">
-    <a href="#marcas">Marcas</a>
-    <span>Novedades</span>
-    <span>Taller</span>
-    <span>Ofertas</span>
-</div>
-
-
-    
-    <!-- Carrusel de NOVEDADES-->
+    <!-- Carrusel de NOVEDADES -->
     <div class="carousel-container">
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"> <!-- Cambia el valor de data-bs-interval a la cantidad de milisegundos que desees -->
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <img src="fotos/Airsoft.jpg" class="d-block w-100" alt="Imagen 1">
-              </div>
-              <div class="carousel-item">
-                  <img src="fotos/R.jpg" class="d-block w-100" alt="Imagen 2">
-              </div>
-              <div class="carousel-item">
-                  <img src="fotos/Airsoft2.jpg" class="d-block w-100" alt="Imagen 3">
-              </div>
-          </div>
-      </div>
-  </div>
-      
-<!-- GRID DE CATEGORIAS -->
-
-<div class="grid-total">
-
-  <div class="box">
-    <img src="fotos/replicas.jpg" alt="Réplicas" class="categoria">
-    <h4 class="nombre_categoria">RÉPLICAS</h4>
-  </div>
-
-  <div class="box">
-    <img src="fotos/accesorios.jpg" alt="Accesorios" class="categoria">
-
-    <h4 class="nombre_categoria">ACCESORIOS</h4>
-  </div>
-
-  <div class="box">
-    <img src="fotos/equipamiento.jpg" alt="Equipamiento" class="categoria">
-    <h4 class="nombre_categoria">EQUIPAMIENTO</h4>
-  </div>
-
-  <div class="box">
-    <img src="fotos/consumibles.jpg" alt="Consumibles" class="categoria">
-
-    <h4 class="nombre_categoria">CONSUMIBLES</h4>
-  </div>
-</div>
-
-<div class="grid-total2">
-  <div class="box-2">
-    <img src="fotos/piezas_internas_grande.jpg" alt="Piezas internas" class="big-box">
-    <img src="fotos/piezas_internas.jpg" alt="Piezas internas" class="lit-box">
-    <h4 class="nombre_categoria2">PIEZAS INTERNAS</h4>
-  </div>
-
-  <div class="box-2">
-    <img src="fotos/piezas_externas_grande.jpg" alt="Piezas externas" class="big-box">
-    <img src="fotos/piezas_externas.jpg" alt="Piezas externas" class="lit-box">
-    <h4 class="nombre_categoria2">PIEZAS EXTERNAS</h4>
-  </div>
-</div>
-
-  <a name="marcas"></a>
-  <h2 class="marcas-destacadas">MARCAS DESTACADAS</h2>
-
-  <section class="div-marcas">
-
-    <div class="marca">
-
-      <img src="marcas/duelcode.svg" alt="Duel code">
-
-    </div>
-    <div class="marca">
-
-      <img src="marcas/gg.svg" alt="G&G">
-
-    </div>
-    <div class="marca">
-
-      <img src="marcas/marui.svg" alt="Tokyio Marui">
-
-    </div>
-    <div class="marca">
-
-      <img src="marcas/racoon.svg" alt="Racoon">
-
-    </div>
-    <div class="marca">
-
-      <img src="marcas/specma.svg" alt="Specma Arms">
-
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <!-- Cambia el valor de data-bs-interval a la cantidad de milisegundos que desees -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="fotos/Airsoft.jpg" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="fotos/R.jpg" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class "carousel-item">
+                    <img src="fotos/Airsoft2.jpg" class="d-block w-100" alt="Imagen 3">
+                </div>
+            </div>
+        </div>
     </div>
 
-
-
-  </section>
-
-<aside></aside>
-
-<!-- FOOTER -->
-
-<footer>
-
-<section class="footer">
-
-  <div class="contenido_footer">
-
-    <img src="estilo/logo.svg" alt="SERPENSOFT" class="logo_footer">
-    <h4>SÍGUENOS EN NUESTRAS REDES</h4>
-
-    <div class="icons">
-
-      <a href="#"><i class='bx bxl-instagram' ></i></a>
-      <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-      <a href="#"><i class='bx bxl-youtube' ></i></a>
-      <a href="#"><i class='bx bxl-twitter'></i></a>
-
+    <!-- GRID DE CATEGORIAS -->
+    <div class="grid-total">
+        <div class="box">
+            <img src="fotos/replicas.jpg" alt="Réplicas" class="categoria">
+            <h4 class="nombre_categoria">RÉPLICAS</h4>
+        </div>
+        <div class="box">
+            <img src="fotos/accesorios.jpg" alt="Accesorios" class="categoria">
+            <h4 class="nombre_categoria">ACCESORIOS</h4>
+        </div>
+        <div class="box">
+            <img src="fotos/equipamiento.jpg" alt="Equipamiento" class="categoria">
+            <h4 class="nombre_categoria">EQUIPAMIENTO</h4>
+        </div>
+        <div class="box">
+            <img src="fotos/consumibles.jpg" alt="Consumibles" class="categoria">
+            <h4 class="nombre_categoria">CONSUMIBLES</h4>
+        </div>
     </div>
-  </div>
 
-  <div class="contenido_footer">
+    <div class="grid-total2">
+        <div class="box-2">
+            <img src="fotos/piezas_internas_grande.jpg" alt="Piezas internas" class="big-box">
+            <img src="fotos/piezas_internas.jpg" alt="Piezas internas" class="lit-box">
+            <h4 class="nombre_categoria2">PIEZAS INTERNAS</h4>
+        </div>
+        <div class="box-2">
+            <img src="fotos/piezas_externas_grande.jpg" alt="Piezas externas" class="big-box">
+            <img src="fotos/piezas_externas.jpg" alt="Piezas externas" class="lit-box">
+            <h4 class="nombre_categoria2">PIEZAS EXTERNAS</h4>
+        </div>
+    </div>
+    
+    <a name="marcas"></a>
+    <h2 class="marcas-destacadas">MARCAS DESTACADAS</h2>
+    
+    <section class="div-marcas">
+        <div class="marca">
+            <img src="marcas/duelcode.svg" alt="Duel code">
+        </div>
+        <div class="marca">
+            <img src="marcas/gg.svg" alt="G&G">
+        </div>
+        <div class="marca">
+            <img src="marcas/marui.svg" alt="Tokyio Marui">
+        </div>
+        <div class="marca">
+            <img src="marcas/racoon.svg" alt="Racoon">
+        </div>
+        <div class="marca">
+            <img src="marcas/specma.svg" alt="Specma Arms">
+        </div>
+    </section>
 
-    <h4>INFORMACIÓN</h4>
-    <li>Rambla Ferrán 33 3r 3a</li>
-    <li>666 66 66 66</li>
-    <li>info@serpensoft.com</li>
-
-  </div>
-
-  <div class="contenido_footer">
-
-    <h4>SOBRE NOSOTROS</h4>
-    <li>Cómo trabajamos</li>
-    <li>Taller</li>
-    <li>Especialidades</li>
-
-  </div>
-
-  <div class="contenido_footer">
-
-    <h4>AYUDA</h4>
-    <li>Privacidad</li>
-    <li>Blog</li>
-    <li>FAQs</li>
-
-  </div>
-  
-
-</section>
-
-</footer>
-
-</body>
-</html>
+    <aside></aside>
+    
+    <!-- FOOTER -->
+    <footer>
+        <section class="footer">
+            <div class="contenido_footer">
+                <img src="estilo/logo.svg" alt="SERPENSOFT" class="logo_footer">
+                <h4>SÍGUENOS EN NUESTRAS REDES</h4>
+                <div class="icons">
+                    <a href="#"><
